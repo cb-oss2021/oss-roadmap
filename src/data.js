@@ -15,7 +15,7 @@ import { databasesCollection } from './data/databases.js';
 // Backend
 import { internetCollection } from './data/internet.js';
 //Frontend
-import {javascriptCollectoin} from './data/javascript.js'
+import {javascriptCollectoin} from './data/java-script.js'
 
 /**
  * All available collections.
