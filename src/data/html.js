@@ -1,12 +1,12 @@
-export const accessibilityCollection = {
-	name: "Accessibility",
+export const htmlCollection = {
+	name: "html",
 	areas: [
 		{
 			skills: [
 				{
-					name: "The why",
+					name: "basic",
 					description: {
-						text: "Learn what accessibility is and why it is important.",
+						text: "기초적인 HTML의 문법과 활용에 대하여 배웁니다.",
 						links: [
 							["Google Devs - Accessibility Fundamentals", "https://developers.google.com/web/fundamentals/accessibility/"],
 							["A11ycasts with Rob Dodson", "https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g"],
@@ -19,9 +19,9 @@ export const accessibilityCollection = {
 					}
 				},
 				{
-					name: "Screen Readers",
+					name: "convention",
 					description: {
-						text: "Learn about assistive technology such as screen readers that reads sections of the page aloud based on the current focus.",
+						text: "HTML 을 작성 할 때 지켜야 하는 규범에 대하여 살펴봅니다.",
 						links: [
 							["The A11Y Project - Screen Reader Myths", "https://a11yproject.com/posts/people-who-use-screen-readers-dont-use-javascript/"],
 							["The A11Y Project - NVDA Screen Reader", "https://a11yproject.com/posts/getting-started-with-nvda/"],
@@ -31,18 +31,18 @@ export const accessibilityCollection = {
 					}
 				},
 				{
-					name: "Accessibility tree",
+					name: "foam",
 					description: {
-						text: "Learn about the accessibility tree and how assistive technology uses it.",
+						text: "HTML을 효율적으로 작성하는 법에 대해 알아봅니다.",
 						links: [
 							["Google Devs - The Accessibility Tree", "https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree"]
 						]
 					},
 					skills: [
 						{
-							name: "ARIA",
+							name: "best",
 							description: {
-								text: "Learn how to use ARIA descriptions an labels to help assistive technology understanding your website.",
+								text: "모범사례를 살펴봅시다.",
 								links: [
 									["Google Devs - ARIA Labels", "https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships"],
 									["Google Devs - Hiding and updating content", "https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content"],
@@ -52,9 +52,9 @@ export const accessibilityCollection = {
 							}
 						},
 						{
-							name: "Accessible HTML",
+							name: "semantic",
 							description: {
-								text: "Learn how to write HTML in such as way that assistive technology better understands it.",
+								text: "의미론 적인 HTML 작성법에 대하여 알아봅니다.",
 								links: [
 									["Google Devs - Introduction to Semantics", "https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/"],
 									["MDN - Accessibility HTML", "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"],
@@ -63,7 +63,7 @@ export const accessibilityCollection = {
 									["Freecodecamp - Semantic Elements", "https://guide.freecodecamp.org/html/html5-semantic-elements/"]
 								]
 							},
-							skills: [
+							/*skills: [
 								{
 									name: "Alt text",
 									description: {
@@ -75,29 +75,29 @@ export const accessibilityCollection = {
 										]
 									}
 								}
-							]
+							]*/
 						},
 						{
-							name: "Accessible CSS",
+							/*name: "validate",
 							description: {
-								text: "Learn how to write CSS in such as way that assistive technology better understands it.",
+								text: "자신이 작성한 HTML 양식을 효과적으로 검증합니다.",
 								links: [
 									["Webaim - CSS", "https://webaim.org/techniques/css/"]
 								]
-							}
+							}*/
 						},
 					]
 				},
 				{
-					name: "Accessible forms",
+					name: "validate",
 					description: {
-						text: "Learn how to build accessible forms that makes it usable to as many people as possible.",
+						text: "자신이 작성한 HTML 양식을 효과적으로 검증합니다.",
 						links: [
 							["Webaim - Forms", "https://webaim.org/techniques/forms/"],
 							["Itnext - Form Accessibility Gudie", "https://itnext.io/form-accessibility-a-practical-guide-4062b7e2dd14"]
 						]
 					}
-				},
+				}/*,
 				{
 					name: "UI States",
 					description: {
@@ -178,8 +178,8 @@ export const accessibilityCollection = {
 							}
 						}
 					]
-				}
+				}*/
 			]
 		}
 	]
-};
+}
