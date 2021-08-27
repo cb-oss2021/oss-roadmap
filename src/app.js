@@ -718,24 +718,6 @@ export class App extends LitElement {
 					<ws-collection class="collection" index="${i}" .collection="${collection}" ?compact="${this.compact}"></ws-collection>
 				`)}
 			</main>
-			<footer id="footer">
-				<div>
-					${user != null ? html`
-						<ws-button @click="${signOut}">🔓 Sign out</ws-button>
-					` : html`
-						<ws-button @click="${signIn}">🔒 Sign in with Google</ws-button>
-					`}
-					<a href="https://github.com/andreasbm/web-skills/stargazers" target="_blank" aria-label="Become a stargazer" rel="noopener">
-						<ws-button>⭐️ Become a stargazer</ws-button>
-					</a>
-					<a href="https://twitter.com/AndreasMehlsen" target="_blank" aria-label="Open Twitter" rel="noopener">
-						<ws-button>🐦 Say hi on Twitter</ws-button>
-					</a>
-					<a href="https://www.buymeacoffee.com/AndreasMehlsen" target="_blank" aria-label="Buy coffee" rel="noopener">
-						<ws-button>☕️ Support me with a cup of coffee</ws-button>
-					</a>
-				</div>
-			</footer>
 			<ws-blur id="blur"></ws-blur>
 		`;
 	}
