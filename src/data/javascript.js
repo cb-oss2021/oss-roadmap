@@ -1,5 +1,5 @@
 export const javascript1Collection = {
-    name: "javascript1",
+    name: "java script",
     areas: [
       {
         skills: [
