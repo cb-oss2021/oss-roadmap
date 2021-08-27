@@ -1,4 +1,4 @@
-export const javascript1Collection = {
+export const javascriptCollection = {
     name: "java script",
     areas: [
       {
