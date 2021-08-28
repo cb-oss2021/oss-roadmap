@@ -1,11 +1,11 @@
 import { fundamentalsCollection } from './data/fundamentals.js';
 import { webcomponentsCollection } from './data/web-components.js';
-import { accessibilityCollection } from './data/accessibility.js';
+import { htmlCollection } from './data/html.js';
 import { pwaCollection } from './data/pwa.js';
 import { architectureCollection } from './data/architecture-and-paradigmes.js';
 import { buildtoolsCollection } from './data/build-tools.js';
 import { testingCollection } from './data/testing.js';
-import { frameworksAndLibrariesCollection } from './data/frameworks-and-libraries.js';
+import { cssCollection } from './data/css.js';
 import { modernCollection } from './data/modern.js';
 import { teamCollaborationCollection } from './data/team-collaboration.js';
 import { algorithmsCollection } from './data/algorithms.js';
@@ -22,11 +22,11 @@ import {javascriptCollectoin} from './data/java-script.js'
  */
 export const collections = [
   fundamentalsCollection,
-  accessibilityCollection,
+  htmlCollection, // front-end
   webcomponentsCollection,
-  pwaCollection,
+  pwaCollection, 
   buildtoolsCollection,
-  frameworksAndLibrariesCollection,
+  cssCollection, // front-end
   testingCollection,
   architectureCollection,
   teamCollaborationCollection,

@@ -1,12 +1,12 @@
-export const frameworksAndLibrariesCollection = {
+export const cssCollection = {
 	name: "Frameworks & Libraries",
 	areas: [
 		{
 			skills: [
 				{
-					name: "lit-element",
+					name: "basic",
 					description: {
-						text: "Learn how to use lit-element for creating fast, lightweight web components.",
+						text: "CSS의 기본 문법과 활용에 대하여 배웁니다.",
 						links: [
 							["lit-element", "https://lit-element.polymer-project.org/"],
 							["Google Devs - Lightning-fast templates", "https://developers.google.com/web/updates/2019/02/lit-element-and-lit-html"],
@@ -16,9 +16,9 @@ export const frameworksAndLibrariesCollection = {
 					}
 				},
 				{
-					name: "Vue",
+					name: "layout",
 					description: {
-						text: "Learn about Vue and how you can use it for building web apps.",
+						text: "웹을 구성하는 다양한 레이아웃을 알아봅니다.",
 						links: [
 							["Vue", "https://vuejs.org/"],
 							["Vue - CLI", "https://cli.vuejs.org/"],
@@ -27,9 +27,9 @@ export const frameworksAndLibrariesCollection = {
 					},
 				},
 				{
-					name: "React",
+					name: "media query",
 					description: {
-						text: "Learn about React and how you can use it for building web apps.",
+						text: "응답성이 높은 레이아웃을 구성합니다.",
 						links: [
 							["React", "https://reactjs.org/"],
 							["web.dev - React", "https://web.dev/react"],
@@ -38,9 +38,9 @@ export const frameworksAndLibrariesCollection = {
 					},
 				},
 				{
-					name: "Angular",
+					name: "reponsive design",
 					description: {
-						text: "Learn about Angular and how you can use it for building web apps.",
+						text: "반응형 웹 디자인에 대해 알아봅니다.",
 						links: [
 							["Angular", "https://angular.io/"],
 							["web.dev - Angular", "https://web.dev/angular"],
@@ -48,7 +48,7 @@ export const frameworksAndLibrariesCollection = {
 						]
 					},
 				},
-				{
+				/*{
 					name: "Svelte",
 					description: {
 						text: "Learn about Svelte and how it can convert your component into highly efficient imperative code.",
@@ -69,7 +69,7 @@ export const frameworksAndLibrariesCollection = {
 							["How to Build Reusable Web Components Using Stenciljs", "https://codeburst.io/how-to-build-web-components-using-stenciljs-afacc5451c2d"],
 						]
 					},
-				},
+				},*/
 			]
 		}
 	]
