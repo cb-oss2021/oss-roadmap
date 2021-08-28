@@ -710,13 +710,6 @@ export class App extends LitElement {
 					<ws-button aria-label="Share website" @click="${this.share}" title="Open share menu">
 						<ws-icon .template="${shareIconTemplate}"></ws-icon>
 					</ws-button>
-					<a aria-label="Open author" href="https://andreasbm.github.io" target="_blank" rel="noopener" title="Say hi">
-						<ws-icon hoverable .template="${andreasIconTemplate}" ></ws-icon>
-					</a>
-					<a id="coffee" aria-label="Buy coffee" href="https://www.buymeacoffee.com/AndreasMehlsen" rel="noopener" title="Support me <3" target="_blank">
-						<svg id="steam" viewBox="0 0 250 327" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" stroke-width="41"><path d="M119.563 265.584c-27-20.344-43.822-41.277-50.465-62.8-6.643-21.522-7.9-45.48-3.771-71.875M170.152 189.86c12.91-24.089 19.139-47.393 18.685-69.913-.453-22.52-5.297-42.502-14.53-59.947"/></g></svg>
-						<ws-icon hoverable .template="${coffeeIconTemplate}"></ws-icon>
-					</a>
 				</div>
 			</header>
 			<main id="collections">
@@ -725,24 +718,6 @@ export class App extends LitElement {
 					<ws-collection class="collection" index="${i}" .collection="${collection}" ?compact="${this.compact}"></ws-collection>
 				`)}
 			</main>
-			<footer id="footer">
-				<div>
-					${user != null ? html`
-						<ws-button @click="${signOut}">🔓 Sign out</ws-button>
-					` : html`
-						<ws-button @click="${signIn}">🔒 Sign in with Google</ws-button>
-					`}
-					<a href="https://github.com/andreasbm/web-skills/stargazers" target="_blank" aria-label="Become a stargazer" rel="noopener">
-						<ws-button>⭐️ Become a stargazer</ws-button>
-					</a>
-					<a href="https://twitter.com/AndreasMehlsen" target="_blank" aria-label="Open Twitter" rel="noopener">
-						<ws-button>🐦 Say hi on Twitter</ws-button>
-					</a>
-					<a href="https://www.buymeacoffee.com/AndreasMehlsen" target="_blank" aria-label="Buy coffee" rel="noopener">
-						<ws-button>☕️ Support me with a cup of coffee</ws-button>
-					</a>
-				</div>
-			</footer>
 			<ws-blur id="blur"></ws-blur>
 		`;
 	}
