@@ -1,5 +1,5 @@
 import { fundamentalsCollection } from './data/fundamentals.js';
-import { webcomponentsCollection } from './data/web-components.js';
+import { javascriptCollection } from './data/java-script.js';
 import { htmlCollection } from './data/html.js';
 import { pwaCollection } from './data/pwa.js';
 import { architectureCollection } from './data/architecture-and-paradigmes.js';
@@ -14,8 +14,7 @@ import { databasesCollection } from './data/databases.js';
 
 // Backend
 import { internetCollection } from './data/internet.js';
-//Frontend
-import {javascriptCollectoin} from './data/java-script.js'
+
 
 /**
  * All available collections.
@@ -23,7 +22,7 @@ import {javascriptCollectoin} from './data/java-script.js'
 export const collections = [
   fundamentalsCollection,
   htmlCollection, // front-end
-  webcomponentsCollection,
+  javascriptCollection,
   pwaCollection, 
   buildtoolsCollection,
   cssCollection, // front-end
@@ -37,6 +36,5 @@ export const collections = [
 
   // Backend
   internetCollection,
-  // Frontend
-  javascriptCollectoin,
+
 ];

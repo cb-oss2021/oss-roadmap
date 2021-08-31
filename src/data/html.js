@@ -31,7 +31,7 @@ export const htmlCollection = {
 					}
 				},
 				{
-					name: "foam",
+					name: "form",
 					description: {
 						text: "HTML을 효율적으로 작성하는 법에 대해 알아봅니다.",
 						links: [
@@ -52,134 +52,136 @@ export const htmlCollection = {
 							}
 						},
 						{
+							
 							name: "semantic",
 							description: {
 								text: "의미론 적인 HTML 작성법에 대하여 알아봅니다.",
 								links: [
-									["Google Devs - Introduction to Semantics", "https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/"],
-									["MDN - Accessibility HTML", "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"],
-									["Webaim - Skip navigation", "https://webaim.org/techniques/skipnav/"],
-									["w3c - Headings", "https://www.w3.org/WAI/tutorials/page-structure/headings/"],
-									["Freecodecamp - Semantic Elements", "https://guide.freecodecamp.org/html/html5-semantic-elements/"]
-								]
-							},
-							/*skills: [
-								{
-									name: "Alt text",
-									description: {
-										text: "Learn how to use the alt attribute to provide a useful text alternative to this image.",
-										links: [
-											["Google Devs - Text Alternatives for Images", "https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/text-alternatives-for-images"],
-											["Webaim - Accessible Images", "https://webaim.org/techniques/images/"],
-											["Webaim - Alternative text", "https://webaim.org/techniques/alttext/"],
-										]
-									}
-								}
-							]*/
+										["Google Devs - Introduction to Semantics", "https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/"],
+										["MDN - Accessibility HTML", "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"],
+										["Webaim - Skip navigation", "https://webaim.org/techniques/skipnav/"],
+										["w3c - Headings", "https://www.w3.org/WAI/tutorials/page-structure/headings/"],
+										["Freecodecamp - Semantic Elements", "https://guide.freecodecamp.org/html/html5-semantic-elements/"]
+									]
+								},
+							// skills: [
+							// 	{
+							// 		name: "Alt text",
+							// 		description: {
+							// 			text: "Learn how to use the alt attribute to provide a useful text alternative to this image.",
+							// 			links: [
+							// 				["Google Devs - Text Alternatives for Images", "https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/text-alternatives-for-images"],
+							// 				["Webaim - Accessible Images", "https://webaim.org/techniques/images/"],
+							// 				["Webaim - Alternative text", "https://webaim.org/techniques/alttext/"],
+							// 			]
+							// 		}
+							// 	}
+							// ]
 						},
 						{
-							/*name: "validate",
+							name: "validate",
 							description: {
 								text: "자신이 작성한 HTML 양식을 효과적으로 검증합니다.",
 								links: [
-									["Webaim - CSS", "https://webaim.org/techniques/css/"]
+									["Webaim - Forms", "https://webaim.org/techniques/forms/"],
+									["Itnext - Form Accessibility Gudie", "https://itnext.io/form-accessibility-a-practical-guide-4062b7e2dd14"]
 								]
-							}*/
+							}
 						},
 					]
 				},
-				{
-					name: "validate",
-					description: {
-						text: "자신이 작성한 HTML 양식을 효과적으로 검증합니다.",
-						links: [
-							["Webaim - Forms", "https://webaim.org/techniques/forms/"],
-							["Itnext - Form Accessibility Gudie", "https://itnext.io/form-accessibility-a-practical-guide-4062b7e2dd14"]
-						]
-					}
-				}/*,
-				{
-					name: "UI States",
-					description: {
-						text: "Learn how to make the state of each UI element clear.",
-						links: [
-							["Google Devs - Accessible Styles", "https://developers.google.com/web/fundamentals/accessibility/accessible-styles"]
-						]
-					}
-				},
-				{
-					name: "Keyboard Accessibility",
-					description: {
-						text: "Learn how to make it easy for keyboard users to navigate your site.",
-						links: [
-							["Webaim - Keyboard", "https://webaim.org/techniques/keyboard/"],
-							["Smashing Magazine - Web with just a keyboard", "https://www.smashingmagazine.com/2018/07/web-with-just-a-keyboard/"]
-						]
-					},
-					skills: [
-						{
-							name: "Focus",
-							description: {
-								text: "Learn how to create a sensible tab order and how to make it easy for the users to locate the currently focused element.",
-								links: [
-									["web.dev - Control focus with tabindex", "https://web.dev/control-focus-with-tabindex/"],
-									["Google Devs - Focus", "https://developers.google.com/web/fundamentals/accessibility/focus/"],
-									["Google Devs - Dom Order Matters", "https://developers.google.com/web/fundamentals/accessibility/focus/dom-order-matters"],
-									["Google Devs - Using Tabindex", "https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex"],
-									["Google Devs - Track Focus", "https://developers.google.com/web/tools/chrome-devtools/accessibility/focus"],
-									["MDN - :focus-visible", "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"],
-									["MDN - :focus-within", "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"]
-								]
-							}
-						}
-					]
-				},
-				{
-					name: "Accessible Colors",
-					description: {
-						text: "Learn how to select colors in such a way that users, including those with visual disabilities, can perceive the content on the page.",
-						links: [
-							["Webaim - Contrast and Color", "https://webaim.org/articles/contrast/"],
-							["The A11Y Project - Check contrast", "https://a11yproject.com/posts/check-contrast-with-mobile-device/"],
-							["The A11Y Project - What is color contrast?", "https://a11yproject.com/posts/what-is-color-contrast/"],
-							["Designing accessible color systems", "https://stripe.com/en-dk/blog/accessible-color-systems"],
-						]
-					}
-				},
-				{
-					name: "Laws & Policies",
-					description: {
-						text: "Learn about the governmental policies related to web accessibility.",
-						links: [
-							["W3C - Laws & Policies", "https://www.w3.org/WAI/policies/"],
-							["Webaim - Laws around the world", "https://webaim.org/articles/laws/world/"],
-							["Webaim - Section 508", "https://webaim.org/standards/508/checklist"],
-							["Webaim - WCAG 2 Checklist", "https://webaim.org/standards/wcag/checklist"],
-							["A11Y.dev - Lawsuits", "https://a11y.dev/470-digital-accessibility-cases-were-filed-in-q3-2018/"],
-						]
-					},
-					skills: [
-						{
-							name: "Audits",
-							description: {
-								text: "Learn how to conduct an accessibility review to improve the overall experience of using your site. Remember, good accessibility equals good UX!",
-								links: [
-									["web.dev - Accessibility audits", "https://web.dev/lighthouse-accessibility"],
-									["Google Devs - How to review", "https://developers.google.com/web/fundamentals/accessibility/how-to-review"],
-									["Webaim - Accessibility Tools", "https://webaim.org/articles/tools/"],
-									["Google Devs - Accessibility Reference", "https://developers.google.com/web/tools/chrome-devtools/accessibility/reference"],
-									["Webaim - Wave", "http://wave.webaim.org/"],
-									["Google Chrome - NoCoffee Extension", "https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl"],
-									["Digital A11Y - Accessibility Plugins", "https://www.digitala11y.com/accessibility-plug-ins-ie-chrome-firefox-browsers/"],
-									["Google Devs - Accessibility for teams", "https://developers.google.com/web/fundamentals/accessibility/a11y-for-teams"],
-									["WCAG 2.0 checklists", "https://www.wuhcag.com/wcag-checklist/"],
-									["How to Meet WCAG (Quick Reference)", "https://www.w3.org/WAI/WCAG21/quickref/"],
-								]
-							}
-						}
-					]
-				}*/
+				// {
+				// 	name: "Accessible forms",
+				// 	description: {
+				// 		text: "Learn how to build accessible forms that makes it usable to as many people as possible.",
+				// 		links: [
+				// 			["Webaim - Forms", "https://webaim.org/techniques/forms/"],
+				// 			["Itnext - Form Accessibility Gudie", "https://itnext.io/form-accessibility-a-practical-guide-4062b7e2dd14"]
+				// 		]
+				// 	}
+				// },
+				// {
+				// 	name: "UI States",
+				// 	description: {
+				// 		text: "Learn how to make the state of each UI element clear.",
+				// 		links: [
+				// 			["Google Devs - Accessible Styles", "https://developers.google.com/web/fundamentals/accessibility/accessible-styles"]
+				// 		]
+				// 	}
+				// },
+				// {
+				// 	name: "Keyboard Accessibility",
+				// 	description: {
+				// 		text: "Learn how to make it easy for keyboard users to navigate your site.",
+				// 		links: [
+				// 			["Webaim - Keyboard", "https://webaim.org/techniques/keyboard/"],
+				// 			["Smashing Magazine - Web with just a keyboard", "https://www.smashingmagazine.com/2018/07/web-with-just-a-keyboard/"]
+				// 		]
+				// 	},
+				// 	skills: [
+				// 		{
+				// 			name: "Focus",
+				// 			description: {
+				// 				text: "Learn how to create a sensible tab order and how to make it easy for the users to locate the currently focused element.",
+				// 				links: [
+				// 					["web.dev - Control focus with tabindex", "https://web.dev/control-focus-with-tabindex/"],
+				// 					["Google Devs - Focus", "https://developers.google.com/web/fundamentals/accessibility/focus/"],
+				// 					["Google Devs - Dom Order Matters", "https://developers.google.com/web/fundamentals/accessibility/focus/dom-order-matters"],
+				// 					["Google Devs - Using Tabindex", "https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex"],
+				// 					["Google Devs - Track Focus", "https://developers.google.com/web/tools/chrome-devtools/accessibility/focus"],
+				// 					["MDN - :focus-visible", "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"],
+				// 					["MDN - :focus-within", "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"]
+				// 				]
+				// 			}
+				// 		}
+				// 	]
+				// },
+				// {
+				// 	name: "Accessible Colors",
+				// 	description: {
+				// 		text: "Learn how to select colors in such a way that users, including those with visual disabilities, can perceive the content on the page.",
+				// 		links: [
+				// 			["Webaim - Contrast and Color", "https://webaim.org/articles/contrast/"],
+				// 			["The A11Y Project - Check contrast", "https://a11yproject.com/posts/check-contrast-with-mobile-device/"],
+				// 			["The A11Y Project - What is color contrast?", "https://a11yproject.com/posts/what-is-color-contrast/"],
+				// 			["Designing accessible color systems", "https://stripe.com/en-dk/blog/accessible-color-systems"],
+				// 		]
+				// 	}
+				// },
+				// {
+				// 	name: "Laws & Policies",
+				// 	description: {
+				// 		text: "Learn about the governmental policies related to web accessibility.",
+				// 		links: [
+				// 			["W3C - Laws & Policies", "https://www.w3.org/WAI/policies/"],
+				// 			["Webaim - Laws around the world", "https://webaim.org/articles/laws/world/"],
+				// 			["Webaim - Section 508", "https://webaim.org/standards/508/checklist"],
+				// 			["Webaim - WCAG 2 Checklist", "https://webaim.org/standards/wcag/checklist"],
+				// 			["A11Y.dev - Lawsuits", "https://a11y.dev/470-digital-accessibility-cases-were-filed-in-q3-2018/"],
+				// 		]
+				// 	},
+				// 	skills: [
+				// 		{
+				// 			name: "Audits",
+				// 			description: {
+				// 				text: "Learn how to conduct an accessibility review to improve the overall experience of using your site. Remember, good accessibility equals good UX!",
+				// 				links: [
+				// 					["web.dev - Accessibility audits", "https://web.dev/lighthouse-accessibility"],
+				// 					["Google Devs - How to review", "https://developers.google.com/web/fundamentals/accessibility/how-to-review"],
+				// 					["Webaim - Accessibility Tools", "https://webaim.org/articles/tools/"],
+				// 					["Google Devs - Accessibility Reference", "https://developers.google.com/web/tools/chrome-devtools/accessibility/reference"],
+				// 					["Webaim - Wave", "http://wave.webaim.org/"],
+				// 					["Google Chrome - NoCoffee Extension", "https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl"],
+				// 					["Digital A11Y - Accessibility Plugins", "https://www.digitala11y.com/accessibility-plug-ins-ie-chrome-firefox-browsers/"],
+				// 					["Google Devs - Accessibility for teams", "https://developers.google.com/web/fundamentals/accessibility/a11y-for-teams"],
+				// 					["WCAG 2.0 checklists", "https://www.wuhcag.com/wcag-checklist/"],
+				// 					["How to Meet WCAG (Quick Reference)", "https://www.w3.org/WAI/WCAG21/quickref/"],
+				// 				]
+				// 			}
+				// 		}
+				// 	]
+				// }
 			]
 		}
 	]
-}
+};
