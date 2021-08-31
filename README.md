@@ -29,7 +29,7 @@
 
 * [커밋 규범](https://github.com/cb-oss2021/oss-roadmap/wiki/%EA%B7%9C%EC%B9%99#%EC%BB%A4%EB%B0%8B-%EA%B7%9C%EB%B2%94)
 
-* [이슈 규범](https://github.com/cb-oss2021/oss-roadmap/wiki/%EA%B7%9C%EC%B9%99#%EC%9D%B4%EC%8A%88-%EA%B7%9C%EB%B2%94)##
+* [이슈 규범](https://github.com/cb-oss2021/oss-roadmap/wiki/%EA%B7%9C%EC%B9%99#%EC%9D%B4%EC%8A%88-%EA%B7%9C%EB%B2%94)
 
 ## :wrench: 활용한 프로그램
 
