@@ -14,6 +14,7 @@ import { databasesCollection } from './data/databases.js';
 
 // Backend
 import { internetCollection } from './data/internet.js';
+import { basicFrontendCollection } from './data/basic-frontend-knowledge.js';
 //Frontend
 import { javascriptCollection } from './data/java-script.js';
 
@@ -37,6 +38,7 @@ export const collections = [
 
   // Backend
   internetCollection,
+  basicFrontendCollection,
   // Frontend
   javascriptCollection,
 ];
