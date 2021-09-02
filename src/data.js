@@ -1,9 +1,9 @@
 import { fundamentalsCollection } from './data/fundamentals.js';
-import { webcomponentsCollection } from './data/web-components.js';
+import { javascriptCollection } from './data/java-script.js';
 import { htmlCollection } from './data/html.js';
+import { frameworkCollection } from './data/frame-work.js';
 import { pwaCollection } from './data/pwa.js';
 import { architectureCollection } from './data/architecture-and-paradigmes.js';
-import { buildtoolsCollection } from './data/build-tools.js';
 import { testingCollection } from './data/testing.js';
 import { cssCollection } from './data/css.js';
 import { modernCollection } from './data/modern.js';
@@ -15,19 +15,18 @@ import { databasesCollection } from './data/databases.js';
 // Backend
 import { internetCollection } from './data/internet.js';
 import { basicFrontendCollection } from './data/basic-frontend-knowledge.js';
-//Frontend
-import { javascriptCollection } from './data/java-script.js';
 
 /**
  * All available collections.
  */
 export const collections = [
+  javascriptCollection,
+  htmlCollection,
+  cssCollection,
+  frameworkCollection,
+  //front - end
   fundamentalsCollection,
-  htmlCollection, // front-end
-  webcomponentsCollection,
   pwaCollection,
-  buildtoolsCollection,
-  cssCollection, // front-end
   testingCollection,
   architectureCollection,
   teamCollaborationCollection,
@@ -39,6 +38,4 @@ export const collections = [
   // Backend
   internetCollection,
   basicFrontendCollection,
-  // Frontend
-  javascriptCollection,
 ];
