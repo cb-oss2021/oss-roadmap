@@ -51,4 +51,14 @@ export const frontcollections=[
   algorithmsCollection,
   databasesCollection,
 
+<<<<<<< HEAD
 ];
+=======
+  // Backend
+  internetCollection,
+  basicFrontendCollection,
+  OSCollection,
+  backendLanguageCollection,
+  backendDatabasesCollection,
+];
+>>>>>>> 210fd148b306586e535887485095ed0909287160
