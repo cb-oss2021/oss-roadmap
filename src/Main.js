@@ -674,7 +674,7 @@ export class App extends LitElement {
 					Computer Science<br> Road Map
 				</div>
                 <div id= choice-road-map>
-                    <button id=btn onclick="location='FrontEnd.html'">FrontEnd</button>
+                    <button id=btn onclick="location='../FrontEnd.html'">FrontEnd</button>
                     <button id=btn onclick="location='../BackEnd.html'">BackEnd</button>
                 </div>
 			</main>
