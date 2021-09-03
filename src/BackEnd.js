@@ -89,7 +89,7 @@ export class App extends LitElement {
 					padding: var(--spacing-m) var(--spacing-l);
 				}
 				
-				#backcollections {
+				#collections {
 					padding: var(--spacing-xxxl) var(--spacing-xxxl) 0;
 					display: flex;
     			    flex-direction: column;
@@ -445,22 +445,6 @@ export class App extends LitElement {
 				});
 			}
 		}, {passive: true});
-	}
-
-	/**
-	 * Shows a help toast.
-	 * @returns {Promise<void>}
-	 */
-	async showHelpToast () {
-		const {showSnackbar} = await import("./util/show-snackbar.js");
-		showSnackbar(`Web Skills is an overview of useful skills to learn as a web developer`, {
-			timeout: 1000 * 20,
-			wide: true,
-			buttons: [
-				["Read More", () => this.openHelp()],
-				["Dismiss", () => ({})]
-			]
-		});
 	}
 
 	/**
