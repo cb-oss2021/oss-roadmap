@@ -30,35 +30,3 @@ export const collections = [
  
 
 ];
-
-export const backcollections=[
-   // Backend
-   internetCollection,
-   basicFrontendCollection,
-   OSCollection,
-   backendLanguageCollection,
- 
-];
-export const frontcollections=[
-  //front - end
-  fundamentalsCollection,
-  pwaCollection,
-  testingCollection,
-  architectureCollection,
-  teamCollaborationCollection,
-  designAndUXCollection,
-  modernCollection,
-  algorithmsCollection,
-  databasesCollection,
-
-<<<<<<< HEAD
-];
-=======
-  // Backend
-  internetCollection,
-  basicFrontendCollection,
-  OSCollection,
-  backendLanguageCollection,
-  backendDatabasesCollection,
-];
->>>>>>> 210fd148b306586e535887485095ed0909287160
