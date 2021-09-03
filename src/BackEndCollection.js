@@ -23,32 +23,12 @@ import { backendDatabasesCollection } from './data/backend-databases.js';
  * All available collections.
  */
 export const collections = [
-  javascriptCollection,
-  htmlCollection,
-  cssCollection,
-  frameworkCollection,
- 
+  
 
-];
-
-export const backcollections=[
-   // Backend
-   internetCollection,
-   basicFrontendCollection,
-   OSCollection,
-   backendLanguageCollection,
- 
-];
-export const frontcollections=[
-  //front - end
-  fundamentalsCollection,
-  pwaCollection,
-  testingCollection,
-  architectureCollection,
-  teamCollaborationCollection,
-  designAndUXCollection,
-  modernCollection,
-  algorithmsCollection,
-  databasesCollection,
+  // Backend
+  internetCollection,
+  basicFrontendCollection,
+  OSCollection,
+  backendLanguageCollection,
 
 ];
