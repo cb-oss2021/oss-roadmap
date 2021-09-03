@@ -447,21 +447,7 @@ export class App extends LitElement {
 		}, {passive: true});
 	}
 
-	/**
-	 * Shows a help toast.
-	 * @returns {Promise<void>}
-	 */
-	async showHelpToast () {
-		const {showSnackbar} = await import("./util/show-snackbar.js");
-		showSnackbar(`Web Skills is an overview of useful skills to learn as a web developer`, {
-			timeout: 1000 * 20,
-			wide: true,
-			buttons: [
-				["Read More", () => this.openHelp()],
-				["Dismiss", () => ({})]
-			]
-		});
-	}
+
 
 	/**
 	 * Sets up the service worker.
