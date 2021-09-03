@@ -701,6 +701,12 @@ export class App extends LitElement {
 					` : undefined}
 				</div>
 				<div>
+					<div button aria-label="Main" onclick="location='index.html'" title="Main">Main
+					</button>
+					</div>
+					<div button aria-label="Front" onclick="location='FrontEnd.html'" title="Front">FrontEnd
+					</button>
+					</div>
 					<div id="toggle-compact" title="${this.compact ? `Disable` : `Enable`} compact layout">
 						<ws-compact-switch @toggle="${this.toggleCompact}" ?checked="${this.compact}"></ws-compact-switch>
 					</div>
