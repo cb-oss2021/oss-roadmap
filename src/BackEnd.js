@@ -1,9 +1,11 @@
 import {css, html, LitElement} from "./../web_modules/lit-element.js";
 import {repeat} from "./../web_modules/lit-html/directives/repeat.js";
 import "./atoms/blur.js";
+import "./atoms/button.js";
 import "./atoms/compact-switch.js";
+import "./atoms/icon.js";
 import {ALLOW_NATIVE_SHARE, DEFAULT_COMPACT_PX, getShareConfig} from "./config.js";
-import {collections} from "./data.js";
+import {collections} from "./BackEndCollection.js";
 import {auth, AuthEvents} from "./firebase/auth.js";
 import "./molecules/collection.js";
 import {sharedStyles} from "./styles/shared.js";
@@ -87,7 +89,7 @@ export class App extends LitElement {
 					padding: var(--spacing-m) var(--spacing-l);
 				}
 				
-				#collections {
+				#backcollections {
 					padding: var(--spacing-xxxl) var(--spacing-xxxl) 0;
 					display: flex;
     			    flex-direction: column;
@@ -258,38 +260,6 @@ export class App extends LitElement {
 						display: none;
 					}
 				}
-                #choice-road-map{
-					margin: 0 auto;
-
-				}
-				#btn{
-					-webkit-appearance: none;
-					-moz-appearance: none;
-					appearance: none;
-					padding: 10px;
-					font-size: 50px;
-					font-weight: 400;
-					text-align: center;
-					text-decoration: none;
-					border: none;
-					border-radius: 4px;	
-					display:inline-block;
-					width: auto;
-					box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
-					0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  					cursor: pointer;
-  					transition: 0.5s;
-					background-color: rgb(230, 230, 230);
-					margin:60px;
-				}
-				#btn:hover,btn:active, btn:focus{
-					background-color: rgb(135, 138, 140);
-				}
-				#title{
-					font-size:100px;
-					text-align:center;
-					margin: 0 auto;
-				}
 			`
 		];
 	}
@@ -297,10 +267,44 @@ export class App extends LitElement {
 	/**
 	 * Setup the element after it has been connected.
 	 */
+	connectedCallback () {
+		super.connectedCallback();
+
+		this.setupListeners();
+		this.setupCompact();
+		this.setupDragging();
+
+		measureDimensions();
+		measurePageView();
+		measureUserTiming(`App was connected`, `initial_load`, performance.now());
+	}
+
 	/**
 	 * Hook up first updated.
 	 * @param props
 	 */
+	firstUpdated (props) {
+		super.firstUpdated(props);
+
+		// Initialize Firebase if the user is logged in
+		if (auth.isAuthenticated) {
+			deferredInitFirebase().then();
+		}
+
+		// Delay some of the work
+		setTimeout(() => {
+			this.setupServiceWorker().then();
+			this.hashChanged();
+			setTimeout(() => {
+				if (getFirstVisit() == null && currentSnackCount() === 0) {
+					this.showHelpToast().then();
+					setFirstVisitDate(new Date());
+				}
+			}, 1000);
+		}, 1000);
+
+	}
+
 	/**
 	 * Sets up listeners.
 	 */
@@ -509,7 +513,6 @@ export class App extends LitElement {
 			reg.update();
 		}, 1000 * 60 * 10);
 	};
-    //메인페이지 onclick 이벤트
 
 	/**
 	 * Shows an update toast.
@@ -548,9 +551,30 @@ export class App extends LitElement {
 	/**
 	 * Signs in the user using Google.
 	 */
+	async signIn () {
+		try {
+			await deferredInitFirebase();
+			await auth.signInWithGoogle();
+
+		} catch (err) {
+			const {openDialog} = await import("./../web_modules/web-dialog.js");
+			const {$dialog} = openDialog({
+				center: true,
+				$content: document.createTextNode(err.message)
+			});
+
+			$dialog.style.setProperty("--dialog-color", "black");
+			$dialog.style.setProperty("--dialog-max-width", "450px");
+		}
+	}
+
 	/**
 	 * Signs out the user.
 	 */
+	async signOut () {
+		await deferredInitFirebase();
+		await auth.signOut();
+	}
 
 	/**
 	 * Toggles compact mode.
@@ -626,6 +650,14 @@ export class App extends LitElement {
 	 * Selects a focus jump.
 	 * @param name
 	 */
+	focusCollection (name) {
+		const $anchor = this.shadowRoot.querySelector(`.focus-anchor[data-collection="${getId({name})}"]`);
+		if ($anchor != null) {
+			$anchor.focus();
+			$anchor.scrollIntoView({block: "start"});
+		}
+	}
+
 	/**
 	 * Focuses the navigation select.
 	 */
@@ -642,34 +674,53 @@ export class App extends LitElement {
 		const user = auth.user;
 
 		return html`
+			<div id="skip-navigation">
+				<div>
+					<span>Jump to&nbsp;</span>
+					<select id="navigation-select" @input="${e => this.focusCollection(e.target.value)}" aria-label="Navigation Assistant" aria-keyshortcuts="Alt + /">
+						<option disabled>Select a section on the page</option>
+						${repeat(collections, ({name}) => html`
+							<option value="${name}">${name}</option>
+						`)}
+					</select>
+				</div>
+				<div>
+					<span>Press <kbd>alt</kbd> + <kbd>/</kbd> to open this menu</span>
+				</div>
+			</div>
 			<header id="header">
 				<div>
 					<a href="https://github.com/cb-oss2021/oss-roadmap" target="_blank" rel="noopener" aria-label="Open Github" title="Open Github">
 						<ws-icon hoverable .template="${githubIconTemplate}"></ws-icon>
 					</a>
-					${user != null ? html : undefined}
+					${user != null ? html`
+						<div id="avatar">
+							<img class="img" src="${user.photoURL}" />
+							<span class="text">${user.displayName || user.email}</span>
+						</div>
+					` : undefined}
 				</div>
 				<div>
+					<div id="toggle-compact" title="${this.compact ? `Disable` : `Enable`} compact layout">
+						<ws-compact-switch @toggle="${this.toggleCompact}" ?checked="${this.compact}"></ws-compact-switch>
+					</div>
+					<ws-button aria-label="Open help" @click="${this.openHelp}" title="Open help">
+						<ws-icon .template="${helpIconTemplate}"></ws-icon>
+					</ws-button>
 					<ws-button aria-label="Share website" @click="${this.share}" title="Open share menu">
 						<ws-icon .template="${shareIconTemplate}"></ws-icon>
 					</ws-button>
 				</div>
 			</header>
-            
 			<main id="collections">
-				<div id="title">
-					Computer Science<br> Road Map
-				</div>
-                <div id= choice-road-map>
-                    <button id=btn onclick="location='FrontEnd.html'">FrontEnd</button>
-                    <button id=btn onclick="location='../BackEnd.html'">BackEnd</button>
-                </div>
+				${repeat(collections, getId, (collection, i) => html`
+					<span class="focus-anchor" data-collection="${getId(collection)}" tabindex="0"></span>
+					<ws-collection class="collection" index="${i}" .collection="${collection}" ?compact="${this.compact}"></ws-collection>
+				`)}
 			</main>
-			
-			
-		
 			<ws-blur id="blur"></ws-blur>
 		`;
 	}
 }
+
 customElements.define("ws-app", App);
