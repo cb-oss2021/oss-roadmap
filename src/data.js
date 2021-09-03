@@ -43,9 +43,5 @@ export const collections = [
   basicFrontendCollection,
   OSCollection,
   backendLanguageCollection,
-<<<<<<< HEAD
   backendDatabasesCollection,
-=======
-
->>>>>>> 8f0b7c74ea8f8849942773858d84cb2bef3f7e39
 ];
