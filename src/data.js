@@ -17,6 +17,7 @@ import { internetCollection } from './data/internet.js';
 import { basicFrontendCollection } from './data/basic-frontend-knowledge.js';
 import { OSCollection } from './data/os-knowledge.js';
 import { backendLanguageCollection } from './data/backend-languages.js';
+import { backendDatabasesCollection } from './data/backend-databases.js';
 
 /**
  * All available collections.
@@ -42,4 +43,5 @@ export const collections = [
   basicFrontendCollection,
   OSCollection,
   backendLanguageCollection,
+  backendDatabasesCollection,
 ];
