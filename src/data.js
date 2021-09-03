@@ -14,23 +14,21 @@ import { databasesCollection } from './data/databases.js';
 
 // Backend
 import { internetCollection } from './data/internet.js';
-//Frontend
-import { javascriptCollection } from './data/java-script.js';
-
+import { basicFrontendCollection } from './data/basic-frontend-knowledge.js';
+import { OSCollection } from './data/os-knowledge.js';
+import { backendLanguageCollection } from './data/backend-languages.js';
 
 /**
  * All available collections.
  */
 export const collections = [
   javascriptCollection,
-  htmlCollection, 
-  cssCollection, 
-  frameworkCollection, 
+  htmlCollection,
+  cssCollection,
+  frameworkCollection,
   //front - end
   fundamentalsCollection,
-  webcomponentsCollection,
   pwaCollection,
-  buildtoolsCollection,
   testingCollection,
   architectureCollection,
   teamCollaborationCollection,
@@ -41,6 +39,8 @@ export const collections = [
 
   // Backend
   internetCollection,
-  // Frontend
-  javascriptCollection,
+  basicFrontendCollection,
+  OSCollection,
+  backendLanguageCollection,
+
 ];
