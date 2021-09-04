@@ -5,7 +5,7 @@ import "./atoms/button.js";
 import "./atoms/compact-switch.js";
 import "./atoms/icon.js";
 import {ALLOW_NATIVE_SHARE, DEFAULT_COMPACT_PX, getShareConfig} from "./config.js";
-import {collections} from "./data.js";
+import {collections} from "./BackEndCollection.js";
 import {auth, AuthEvents} from "./firebase/auth.js";
 import "./molecules/collection.js";
 import {sharedStyles} from "./styles/shared.js";
@@ -447,8 +447,6 @@ export class App extends LitElement {
 		}, {passive: true});
 	}
 
-
-
 	/**
 	 * Sets up the service worker.
 	 * @returns {Promise<void>}
@@ -676,7 +674,6 @@ export class App extends LitElement {
 			</div>
 			<header id="header">
 				<div>
-					
 					<a href="https://github.com/cb-oss2021/oss-roadmap" target="_blank" rel="noopener" aria-label="Open Github" title="Open Github">
 						<ws-icon hoverable .template="${githubIconTemplate}"></ws-icon>
 					</a>
@@ -689,10 +686,10 @@ export class App extends LitElement {
 				</div>
 				<div>
 					<div button aria-label="Main" onclick="location='index.html'" title="Main">Main
-						</button>
+					</button>
 					</div>
-					<div button aria-label="Back" onclick="location='BackEnd.html'" title="Back">BackEnd
-						</button>
+					<div button aria-label="Front" onclick="location='FrontEnd.html'" title="Front">FrontEnd
+					</button>
 					</div>
 					<div id="toggle-compact" title="${this.compact ? `Disable` : `Enable`} compact layout">
 						<ws-compact-switch @toggle="${this.toggleCompact}" ?checked="${this.compact}"></ws-compact-switch>
