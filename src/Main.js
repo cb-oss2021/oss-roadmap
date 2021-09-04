@@ -447,18 +447,6 @@ export class App extends LitElement {
 	 * Shows a help toast.
 	 * @returns {Promise<void>}
 	 */
-	async showHelpToast () {
-		const {showSnackbar} = await import("./util/show-snackbar.js");
-		showSnackbar(`Web Skills is an overview of useful skills to learn as a web developer`, {
-			timeout: 1000 * 20,
-			wide: true,
-			buttons: [
-				["Read More", () => this.openHelp()],
-				["Dismiss", () => ({})]
-			]
-		});
-	}
-
 	/**
 	 * Sets up the service worker.
 	 * @returns {Promise<void>}
@@ -658,11 +646,11 @@ export class App extends LitElement {
             
 			<main id="collections">
 				<div id="title">
-					Computer Science<br> Road Map
+					Computer Science<br> RoadMap
 				</div>
                 <div id= choice-road-map>
                     <button id=btn onclick="location='FrontEnd.html'">FrontEnd</button>
-                    <button id=btn onclick="location='../BackEnd.html'">BackEnd</button>
+                    <button id=btn onclick="location='BackEnd.html'">BackEnd</button>
                 </div>
 			</main>
 			
