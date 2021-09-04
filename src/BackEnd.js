@@ -89,7 +89,7 @@ export class App extends LitElement {
 					padding: var(--spacing-m) var(--spacing-l);
 				}
 				
-				#backcollections {
+				#collections {
 					padding: var(--spacing-xxxl) var(--spacing-xxxl) 0;
 					display: flex;
     			    flex-direction: column;
@@ -448,22 +448,6 @@ export class App extends LitElement {
 	}
 
 	/**
-	 * Shows a help toast.
-	 * @returns {Promise<void>}
-	 */
-	async showHelpToast () {
-		const {showSnackbar} = await import("./util/show-snackbar.js");
-		showSnackbar(`Web Skills is an overview of useful skills to learn as a web developer`, {
-			timeout: 1000 * 20,
-			wide: true,
-			buttons: [
-				["Read More", () => this.openHelp()],
-				["Dismiss", () => ({})]
-			]
-		});
-	}
-
-	/**
 	 * Sets up the service worker.
 	 * @returns {Promise<void>}
 	 */
@@ -701,6 +685,12 @@ export class App extends LitElement {
 					` : undefined}
 				</div>
 				<div>
+					<div button aria-label="Main" onclick="location='index.html'" title="Main">Main
+					</button>
+					</div>
+					<div button aria-label="Front" onclick="location='FrontEnd.html'" title="Front">FrontEnd
+					</button>
+					</div>
 					<div id="toggle-compact" title="${this.compact ? `Disable` : `Enable`} compact layout">
 						<ws-compact-switch @toggle="${this.toggleCompact}" ?checked="${this.compact}"></ws-compact-switch>
 					</div>

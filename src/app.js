@@ -447,21 +447,7 @@ export class App extends LitElement {
 		}, {passive: true});
 	}
 
-	/**
-	 * Shows a help toast.
-	 * @returns {Promise<void>}
-	 */
-	async showHelpToast () {
-		const {showSnackbar} = await import("./util/show-snackbar.js");
-		showSnackbar(`Web Skills is an overview of useful skills to learn as a web developer`, {
-			timeout: 1000 * 20,
-			wide: true,
-			buttons: [
-				["Read More", () => this.openHelp()],
-				["Dismiss", () => ({})]
-			]
-		});
-	}
+
 
 	/**
 	 * Sets up the service worker.
@@ -690,6 +676,7 @@ export class App extends LitElement {
 			</div>
 			<header id="header">
 				<div>
+					
 					<a href="https://github.com/cb-oss2021/oss-roadmap" target="_blank" rel="noopener" aria-label="Open Github" title="Open Github">
 						<ws-icon hoverable .template="${githubIconTemplate}"></ws-icon>
 					</a>
@@ -701,6 +688,12 @@ export class App extends LitElement {
 					` : undefined}
 				</div>
 				<div>
+					<div button aria-label="Main" onclick="location='index.html'" title="Main">Main
+						</button>
+					</div>
+					<div button aria-label="Back" onclick="location='BackEnd.html'" title="Back">BackEnd
+						</button>
+					</div>
 					<div id="toggle-compact" title="${this.compact ? `Disable` : `Enable`} compact layout">
 						<ws-compact-switch @toggle="${this.toggleCompact}" ?checked="${this.compact}"></ws-compact-switch>
 					</div>
