@@ -8,13 +8,8 @@ export const htmlCollection = {
 					description: {
 						text: "기초적인 HTML의 문법과 활용에 대하여 배웁니다.",
 						links: [
-							["Google Devs - Accessibility Fundamentals", "https://developers.google.com/web/fundamentals/accessibility/"],
-							["A11ycasts with Rob Dodson", "https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g"],
-							["Udacity - Chromevox Lite", "http://udacity.github.io/ud891/lesson3-semantics-built-in/02-chromevox-lite/"],
-							["Dev.to - Why Accessibility Matters", "https://dev.to/lhoffmanwg1/why-accessibility-matters-39nl"],
-							["Abilitynet - Why Accessibility Matters", "https://www.abilitynet.org.uk/why-accessibility-matters"],
-							["Udacity - Web Accessibility", "https://www.udacity.com/course/web-accessibility--ud891"],
-							["Youtube - Headings, Landmarks, and Tabs", "https://www.youtube.com/watch?v=HE2R86EZPMA"],
+							["생활 코딩 - html", "https://www.youtube.com/watch?v=OGFgdro160I&list=PLuHgQVnccGMDUzDDCKW-pCZQY-MMCX5yB"],
+						
 						]
 					},
 					skills: [
@@ -68,15 +63,10 @@ export const htmlCollection = {
 				{
 					name: "svg",
 					description: {
-						text: "기초적인 HTML의 문법과 활용에 대하여 배웁니다.",
+						text: "2차원 벡터 그래픽을 표현하기 위한 XML 기반의 파일 형식입니다.",
 						links: [
-							["Google Devs - Accessibility Fundamentals", "https://developers.google.com/web/fundamentals/accessibility/"],
-							["A11ycasts with Rob Dodson", "https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g"],
-							["Udacity - Chromevox Lite", "http://udacity.github.io/ud891/lesson3-semantics-built-in/02-chromevox-lite/"],
-							["Dev.to - Why Accessibility Matters", "https://dev.to/lhoffmanwg1/why-accessibility-matters-39nl"],
-							["Abilitynet - Why Accessibility Matters", "https://www.abilitynet.org.uk/why-accessibility-matters"],
-							["Udacity - Web Accessibility", "https://www.udacity.com/course/web-accessibility--ud891"],
-							["Youtube - Headings, Landmarks, and Tabs", "https://www.youtube.com/watch?v=HE2R86EZPMA"],
+							["MDN - svg 시작하기", "https://developer.mozilla.org/ko/docs/Web/SVG"],
+						
 						]
 					}
 				}
@@ -89,10 +79,7 @@ export const htmlCollection = {
 					description: {
 						text: "HTML 을 작성 할 때 지켜야 하는 규범에 대하여 살펴봅니다.",
 						links: [
-							["The A11Y Project - Screen Reader Myths", "https://a11yproject.com/posts/people-who-use-screen-readers-dont-use-javascript/"],
-							["The A11Y Project - NVDA Screen Reader", "https://a11yproject.com/posts/getting-started-with-nvda/"],
-							["The A11Y Project - OS X Voiceover", "https://a11yproject.com/posts/getting-started-with-voiceover/"],
-							["Webaim - Screen Reader Survey", "https://webaim.org/projects/screenreadersurvey7/"]
+						
 						]
 					},
 					skills: [
@@ -109,9 +96,9 @@ export const htmlCollection = {
 						{
 							name: "스타일 선언",
 							description: {
-								text: "기초적인 HTML의 문법과 활용에 대하여 배웁니다.",
+								text: "html 문서를 통해 스타일을 선언하여 봅니다.",
 								links: [
-									["NHN 코딩 컨벤션", "https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf"],
+									["css 선언방법", "http://www.crewmate.co.kr/standard/pages/css_01.jsp"],
 								
 								]	
 							}
@@ -119,9 +106,9 @@ export const htmlCollection = {
 							{
 								name: "자바 스크립트 선언",
 								description: {
-									text: "기초적인 HTML의 문법과 활용에 대하여 배웁니다.",
+									text: "script 구문을 통해 자바스크립트를 선언하여 봅니다.",
 									links: [
-										["NHN 코딩 컨벤션", "https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf"],
+										["자바스크립트 선언문", "https://opentutorials.org/module/3989/26049"],
 									
 									]	
 								}
@@ -129,9 +116,9 @@ export const htmlCollection = {
 								{
 									name: "HTML 구조",
 									description: {
-										text: "기초적인 HTML의 문법과 활용에 대하여 배웁니다.",
+										text: "기초적인 HTML의 구조를 알아봅니다.",
 										links: [
-											["NHN 코딩 컨벤션", "https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf"],
+											["html 기본 구조", "http://tcpschool.com/html/html_intro_basicStructure"],
 										
 										]	
 									}
@@ -170,13 +157,9 @@ export const htmlCollection = {
 									{
 									name: "semantic 태그",
 									description: {
-									text: "의미론 적인 HTML 작성법에 대하여 알아봅니다.",
+									text: "의미론 적 태그를 사용할 수 있습니다.",
 									links: [
-										["Google Devs - Introduction to Semantics", "https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/"],
-										["MDN - Accessibility HTML", "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"],
-										["Webaim - Skip navigation", "https://webaim.org/techniques/skipnav/"],
-										["w3c - Headings", "https://www.w3.org/WAI/tutorials/page-structure/headings/"],
-										["Freecodecamp - Semantic Elements", "https://guide.freecodecamp.org/html/html5-semantic-elements/"]
+										["생활코딩 - 의미론적 태그", "https://opentutorials.org/course/2039/10954"],
 									]
 								}
 								}
@@ -185,13 +168,10 @@ export const htmlCollection = {
 								{
 								name: "form 태그",
 								description: {
-								text: "의미론 적인 HTML 작성법에 대하여 알아봅니다.",
+								text: "form 태그를 활용 해 웹의 큰 틀을 만들 수 있습니다.",
 								links: [
-										["Google Devs - Introduction to Semantics", "https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/"],
-										["MDN - Accessibility HTML", "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"],
-										["Webaim - Skip navigation", "https://webaim.org/techniques/skipnav/"],
-										["w3c - Headings", "https://www.w3.org/WAI/tutorials/page-structure/headings/"],
-										["Freecodecamp - Semantic Elements", "https://guide.freecodecamp.org/html/html5-semantic-elements/"]
+										["form 의 이해", "https://www.nextree.co.kr/p8428/"],
+								
 									]
 								},															
 						},
@@ -200,14 +180,10 @@ export const htmlCollection = {
 							
 								name: "폼 디자인",
 								description: {
-									text: "의미론 적인 HTML 작성법에 대하여 알아봅니다.",
+									text: "폼을 디자인 해 봅니다.",
 									links: [
-											["Google Devs - Introduction to Semantics", "https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/"],
-											["MDN - Accessibility HTML", "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"],
-											["Webaim - Skip navigation", "https://webaim.org/techniques/skipnav/"],
-											["w3c - Headings", "https://www.w3.org/WAI/tutorials/page-structure/headings/"],
-											["Freecodecamp - Semantic Elements", "https://guide.freecodecamp.org/html/html5-semantic-elements/"]
-										]
+											["폼 디자인 잘하기", "https://thinkofweb.net/125"],
+								]
 									},
 
 						}
@@ -221,21 +197,19 @@ export const htmlCollection = {
 						{
 						name: "SEO",
 						description: {
-							text: "HTML을 효율적으로 작성하는 법에 대해 알아봅니다.",
+							text: "검색 엔진 최적화를 통해 웹을 더 많이 노출시킬 수 있습니다.",
 							links: [
-								["Google Devs - The Accessibility Tree", "https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree"]
+								["Google Devs - 검색 엔진 기본 가이드", "hhttps://developers.google.com/search/docs/beginner/seo-starter-guide?hl=ko"]
 							]
 						},
 						skills: [
 							{
 								name: "색인 생성",
 								description: {
-									text: "모범사례를 살펴봅시다.",
+									text: "색인 생성을 통한 알고리즘 노출 방법을 알아봅니다.",
 									links: [
-										["Google Devs - ARIA Labels", "https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships"],
-										["Google Devs - Hiding and updating content", "https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content"],
-										["The A11Y Project - ARIA States", "https://a11yproject.com/posts/ARIA-states/"],
-										["The A11Y Project - ARIA Properties", "https://a11yproject.com/posts/ARIA-properties/"],
+										["Google Devs - 색인 생성 소개", "https://developers.google.com/search/docs/beginner/intro-indexing?hl=ko"],
+									
 									]
 								}
 							},
@@ -243,13 +217,10 @@ export const htmlCollection = {
 								
 								name: "메타 태그",
 								description: {
-									text: "의미론 적인 HTML 작성법에 대하여 알아봅니다.",
+									text: "메타 태그를 통해 검색 엔진을 최적화합니다.",
 									links: [
-											["Google Devs - Introduction to Semantics", "https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/"],
-											["MDN - Accessibility HTML", "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"],
-											["Webaim - Skip navigation", "https://webaim.org/techniques/skipnav/"],
-											["w3c - Headings", "https://www.w3.org/WAI/tutorials/page-structure/headings/"],
-											["Freecodecamp - Semantic Elements", "https://guide.freecodecamp.org/html/html5-semantic-elements/"]
+											["검색 엔진 최적화 기본 가이드", "https://static.googleusercontent.com/media/www.google.com/ko//intl/ko/webmasters/docs/search-engine-optimization-starter-guide-ko.pdf"],
+									
 										]
 									},
 								
@@ -264,24 +235,19 @@ export const htmlCollection = {
 						{
 								name: "유효성 검사",
 								description: {
-									text: "모범사례를 살펴봅시다.",
+									text: "W3C에서 지정한 웹표준을 얼마나 지켯나를 체크하고 수정하기 위한 검사입니다.",
 									links: [
-										["Google Devs - ARIA Labels", "https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships"],
-										["Google Devs - Hiding and updating content", "https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content"],
-										["The A11Y Project - ARIA States", "https://a11yproject.com/posts/ARIA-states/"],
-										["The A11Y Project - ARIA Properties", "https://a11yproject.com/posts/ARIA-properties/"],
+									
 									]
 							},
 							skills: [
 								{
 									name: "W3C",
 									description: {
-										text: "모범사례를 살펴봅시다.",
+										text: "w3c 유효성 검사 도구를 사용 할 수 있습니다.",
 										links: [
-											["Google Devs - ARIA Labels", "https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships"],
-											["Google Devs - Hiding and updating content", "https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content"],
-											["The A11Y Project - ARIA States", "https://a11yproject.com/posts/ARIA-states/"],
-											["The A11Y Project - ARIA Properties", "https://a11yproject.com/posts/ARIA-properties/"],
+											["w3c", "http://validator.w3.org/"],
+								
 										]
 									}
 								},
@@ -298,10 +264,8 @@ export const htmlCollection = {
 							description: {
 								text: "모범사례를 살펴봅시다.",
 								links: [
-									["Google Devs - ARIA Labels", "https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships"],
-									["Google Devs - Hiding and updating content", "https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content"],
-									["The A11Y Project - ARIA States", "https://a11yproject.com/posts/ARIA-states/"],
-									["The A11Y Project - ARIA Properties", "https://a11yproject.com/posts/ARIA-properties/"],
+									["MDN - HTML guidelines", "https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/HTML"],
+									["W3Schools - HTML Coding Conventions", "https://www.w3schools.com/html/html5_syntax.asp"]
 								]
 							}
 						},
