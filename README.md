@@ -9,11 +9,10 @@
 > web - skills 오픈소스를 기반으로 제작하였습니다. 
 * [web-skills 깃허브](https://github.com/andreasbm/web-skills)
  
-<p align="center">
-	<a href="http://andreasbm.github.io/web-skills" target="_blank">
-		<img src="https://raw.githubusercontent.com/andreasbm/web-skills/master/demo.gif" alt="Web Skills Demo" width="800" />
-	</a>
-</p>
+
+	![image](https://user-images.githubusercontent.com/79635312/132159939-5b024ff4-7576-4fd4-b389-03513b947ab7.png)
+
+	
   
 ## :sparkle: 팀원정보  
 ![이한주](https://img.shields.io/badge/충북대학교_소프트웨어학과-이한주-blue)  
